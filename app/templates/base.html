@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>rabbit's webpage - {{ titlevar }}</title>
+        
+        {% if user %}
+            <p>Hello, {{user}}</p>
+        {% else %}
+            <p>Hello and fuck you</p>
+        {% endif %}
+    </head>
+    <body>
+    
+    
+        <div>Rabbits webface: <a href="/index">Home</a></div>
+        <div>Wtf: <a href="/stuff">Stuff</a></div>
+        <div>Rabbit's miniblog: <a href="/blog">Blog</a></div>
+        
+        <hr>
+        
+        {% block content %}{% endblock %}
+        
+        
+    </body>
+    
+
+
+</html>
+
