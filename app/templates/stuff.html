@@ -3,6 +3,10 @@
 
 {% block content %}
 
-<p>stuff</p>
+{% if num %}
+    <p>stuff #{{num}}</p>
+{% else %}
+    <p>stuff.</p>
+{% endif %}
         
 {% endblock %}
